@@ -51,7 +51,6 @@ logs/
 *.vrb
 *.dvi
 *.ps
-*.pdf
 
 # Build / cache
 build/
