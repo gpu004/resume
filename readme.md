@@ -1,61 +1,66 @@
-# Tushar
+# FNU Tushar
 
-+1 (347) 318-7920 | [tushardzig@gmail.com](mailto:tushardzig@gmail.com) | [GitHub](https://github.com/tusharhqq) | [LinkedIn](https://www.linkedin.com/in/dahiya-tushar/)
+Brooklyn, New York, United States
+
++1 (347) 318-7920 | [tushardzig@gmail.com](mailto:tushardzig@gmail.com) | [Website](https://tushar-6666.vercel.app/) | [GitHub](https://github.com/gpu004) | [LinkedIn](https://www.linkedin.com/in/dahiya-tushar/)
 
 [Download the resume PDF](basic/resume.pdf)
 
-## Education
-
-**Master's in Computer Science, New York University** | 2026 - 2028
-
-Relevant Coursework: Design and Analysis of Algorithms II, Algorithmic Machine Learning and Data Science
-
-**Information Science Engineering, The National Institute of Engineering, Mysore** | 2020 - 2024
-
-Relevant Coursework: Data Structures, Object-Oriented Programming in Java, Computer Networking, and Databases
-
 ## Experience
 
-**Independent Consultant, Abu Dhabi-based Client** | January 2026 - May 2026
+**Instructor and Grader, Advanced Database Systems**, New York University | September 2026 - December 2026
 
-Abu Dhabi, United Arab Emirates (Remote)
+New York, NY
 
-- Worked on full-stack development for a platform focused on the financialization of real-world assets.
+- Led technical sessions for graduate students on AQuery, q/kdb+, and ReproZip, covering query execution, time-series data processing, and reproducible database experiments.
+- Supported students with database-system assignments and projects involving transaction processing, performance tuning, indexing, and distributed systems.
 
-**Software Developer, Qdata, Sirius Holdings** | April 2025 - December 2025
+**Independent Software Consultant**, Confidential Fintech Client | January 2026 - July 2026
 
-Abu Dhabi, United Arab Emirates (On-site)
+Abu Dhabi, UAE
 
-- Built a **CNF generator and Bitcoin mining implementation (SHA-256) from scratch**, optimizing for distributed execution.
-- Created responsive trading dashboards on top of MT5 and its extensions.
-- Architected a distributed CORBA/OmniORB manager-worker system for large-scale problem solving and Dockerized manager-worker services on AWS ECS, automating Terraform provisioning to scale workloads to **1,000+ concurrent workers**.
+- Developed end-to-end marketplaces for a platform for the financialization and trading of real-world assets.
+- Developed custom reinforcement-learning environments in Harbor, including task definitions, reward logic, and evaluation workflows for training and evaluating OpenAI and Anthropic models.
 
-**Backend and Data Engineer, Zator** | December 2024 - March 2025
+**Software Developer**, Qdata, Sirius Holdings | April 2025 - May 2026
 
-New York, USA (Remote)
+Abu Dhabi, UAE
 
-- Developed data streaming pipelines in Golang and Rust, fetching JSON/Protobuf data from APIs and Solana RPC.
-- Engineered Kafka workflows (producers, consumers, topics) for efficient data filtering.
+- Built a CNF generator and SHA-256 implementation from scratch and optimized them for distributed execution.
+- Designed a CORBA/OmniORB manager-worker system and containerized workloads on AWS ECS. Used Terraform to provision 1,000+ concurrent workers.
+- Developed MT5 trading dashboards and automated multi-leg position-management systems with configurable execution and exit strategies.
 
-**Young Research Fellow, IIIT Hyderabad IHub Foundation** | July 2024 - November 2024
+**Backend and Data Engineer**, Zator | December 2024 - March 2025
 
-Hyderabad, India (On-site)
+- Developed data streaming pipelines in Go and Rust to ingest JSON and Protobuf data from APIs and Solana RPC.
+- Built Kafka streaming workflows with custom producers and consumers for real-time data filtering and processing.
 
-- Engineered a real-time IoT system by collecting sensor data with MQTT, Fastify, and SQLite, and integrating it with machine learning insights for interactive visualizations.
-- Researched and implemented on-device ML inference in React Native using ML Kit via a custom wrapper, TensorFlow Lite (react-native-fast-tflite), and ONNX (onnx-runtime-react-native).
+**Young Research Fellow**, IIIT Hyderabad IHub | July 2024 - November 2024
+
+- Built a real-time IoT system to collect sensor data with MQTT, Fastify, and SQLite and display machine learning results in interactive visualizations.
+- Researched and implemented on-device ML inference in React Native using a custom ML Kit wrapper, react-native-fast-tflite for TensorFlow Lite, and onnx-runtime-react-native for ONNX.
+
+## Education
+
+**Master of Science in Computer Science**, New York University | September 2026 - May 2028
+
+**Bachelor of Engineering in Information Science and Engineering**, National Institute of Engineering, Mysore | January 2021 - August 2024
+
+## Skills
+
+- Programming languages: Go, Rust, TypeScript
+- Frameworks and libraries: React Native, Fastify, ML Kit, TensorFlow Lite, ONNX Runtime
+- Databases: SQLite, Postgres, ClickHouse, q/kdb+, TigerBeetle
+- Tools and software: Kafka, Docker, Terraform, MT5, CORBA, OmniORB, Cargo
+- Cloud platforms: AWS: EC2, ECS, ECR, S3, IAM, VPC, VPN, Lambda, CloudWatch. Cloudflare: R2, Workers. Modal.
 
 ## Projects
 
 **Monkey Compiler**
 
-- Developed in Go with no external dependencies; interprets integer and boolean types.
-- Supports function calls, closures, and conditional expressions.
+- Built an interpreter in Go with no external dependencies, supporting integers, booleans, functions, closures, conditionals, and lexical scoping.
 
 **Market Maker Simulator**
 
-- Built a high-performance **Rust** market-maker simulator for ETH/USDC with live **Binance WebSocket**, **Jupiter** and **CoW API** price aggregation, custom execution logic, synthetic bid/ask modeling, and real-time PnL tracking.
-- Designed and benchmarked a 10-minute automated quoting engine with a 2-second tick rate, a $100k notional target per session, dynamic fill-probability interpolation, a median-pricing model, and resilient async rate-limits and reconnection handling using the **Rust** async runtime and **cargo** suite.
-
-## Achievements
-
-- **First-batch solver**, Jane Street *Dropped a Neural Net*: 97-layer reconstruction (Hungarian pairing + hill climbing), exact match to historical predictions (MSE 0).
+- Built an asynchronous ETH/USDC market-making simulator in Rust. Ingested Binance WebSocket and Jupiter/CoW Protocol API prices concurrently and maintained the latest cross-venue market state through Tokio channels.
+- Designed median-based quoting and probabilistic execution models with 2-second trading ticks, automatic WebSocket reconnection, dynamic fill probabilities, and real-time PnL and notional tracking.

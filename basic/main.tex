@@ -1,54 +1,68 @@
 \documentclass{resume}
 
-\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.25in]{geometry}
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\usepackage[left=0.4in,top=0.35in,right=0.4in,bottom=0.3in]{geometry}
 
-\name{Tushar}
+\name{FNU Tushar}
 \address{+1 (347) 318-7920 \\ \href{mailto:tushardzig@gmail.com}{tushardzig@gmail.com}}
-\address{\href{https://github.com/tusharhqq}{GitHub} \\ \href{https://www.linkedin.com/in/dahiya-tushar/}{LinkedIn}}
+\address{\href{https://tushar-6666.vercel.app/}{Website} \\ \href{https://github.com/gpu004}{GitHub} \\ \href{https://www.linkedin.com/in/dahiya-tushar/}{LinkedIn}}
+\address{Brooklyn, New York, United States}
 
 \begin{document}
 
-\begin{rSection}{Education}
+\begin{rSection}{Experience}
 
-\textbf{Master's in Computer Science}, New York University \hfill 2026 -- 2028\\
-Relevant Coursework: Design and Analysis of Algorithms II, Algorithmic Machine Learning and Data Science
+\textbf{Instructor and Grader, Advanced Database Systems}, New York University\hfill September 2026 - December 2026\\
+New York, NY
+\resumeItemListStart
+  \resumeItem{Led technical sessions for graduate students on AQuery, q/kdb+, and ReproZip, covering query execution, time-series data processing, and reproducible database experiments.}
+  \resumeItem{Supported students with database-system assignments and projects involving transaction processing, performance tuning, indexing, and distributed systems.}
+\resumeItemListEnd
 
-\textbf{Information Science Engineering}, The National Institute of Engineering, Mysore \hfill 2020 -- 2024\\
-Relevant Coursework: Data Structures, Object-Oriented Programming in Java, Computer Networking, and Databases
+\textbf{Independent Software Consultant}, Confidential Fintech Client\hfill January 2026 - July 2026\\
+Abu Dhabi, UAE
+\resumeItemListStart
+  \resumeItem{Developed end-to-end marketplaces for a platform for the financialization and trading of real-world assets.}
+  \resumeItem{Developed custom reinforcement-learning environments in Harbor, including task definitions, reward logic, and evaluation workflows for training and evaluating OpenAI and Anthropic models.}
+\resumeItemListEnd
+
+\textbf{Software Developer}, Qdata, Sirius Holdings\hfill April 2025 - May 2026\\
+Abu Dhabi, UAE
+\resumeItemListStart
+  \resumeItem{Built a CNF generator and SHA-256 implementation from scratch and optimized them for distributed execution.}
+  \resumeItem{Designed a CORBA/OmniORB manager-worker system and containerized workloads on AWS ECS. Used Terraform to provision 1,000+ concurrent workers.}
+  \resumeItem{Developed MT5 trading dashboards and automated multi-leg position-management systems with configurable execution and exit strategies.}
+\resumeItemListEnd
+
+\textbf{Backend and Data Engineer}, Zator\hfill December 2024 - March 2025
+\resumeItemListStart
+  \resumeItem{Developed data streaming pipelines in Go and Rust to ingest JSON and Protobuf data from APIs and Solana RPC.}
+  \resumeItem{Built Kafka streaming workflows with custom producers and consumers for real-time data filtering and processing.}
+\resumeItemListEnd
+
+\textbf{Young Research Fellow}, IIIT Hyderabad IHub\hfill July 2024 - November 2024
+\resumeItemListStart
+  \resumeItem{Built a real-time IoT system to collect sensor data with MQTT, Fastify, and SQLite and display machine learning results in interactive visualizations.}
+  \resumeItem{Researched and implemented on-device ML inference in React Native using a custom ML Kit wrapper, react-native-fast-tflite for TensorFlow Lite, and onnx-runtime-react-native for ONNX.}
+\resumeItemListEnd
 
 \end{rSection}
 
-\begin{rSection}{Experience}
+\begin{rSection}{Education}
 
-\textbf{Independent Consultant}, Abu Dhabi-based Client \hfill January 2026 -- May 2026\\
-Abu Dhabi, United Arab Emirates (Remote)
-\resumeItemListStart
-  \resumeItem{Worked on full-stack development for a platform focused on the financialization of real-world assets.}
-\resumeItemListEnd
+\textbf{Master of Science in Computer Science}, New York University\hfill September 2026 - May 2028
 
-\textbf{Software Developer}, Qdata, Sirius Holdings \hfill April 2025 -- December 2025\\
-Abu Dhabi, United Arab Emirates (On-site)
-\resumeItemListStart
-  \resumeItem{Built a \textbf{CNF generator and Bitcoin mining implementation (SHA-256) from scratch}, optimizing for distributed execution.}
-  \resumeItem{Created responsive trading dashboards on top of MT5 and its extensions.}
-  \resumeItem{Architected a distributed CORBA/OmniORB manager--worker system for large-scale problem solving and Dockerized manager--worker services on AWS ECS, automating Terraform provisioning to scale workloads to \textbf{1,000+ concurrent workers}.}
-\resumeItemListEnd
+\textbf{Bachelor of Engineering in Information Science and Engineering}\\
+National Institute of Engineering, Mysore\hfill January 2021 - August 2024
 
-\textbf{Backend and Data Engineer}, Zator \hfill December 2024 -- March 2025\\
-New York, USA (Remote)
-\resumeItemListStart
-  \resumeItem{Developed data streaming pipelines in Golang and Rust, fetching JSON/Protobuf data from APIs and Solana RPC.}
-  \resumeItem{Engineered Kafka workflows (producers, consumers, topics) for efficient data filtering.}
-\resumeItemListEnd
+\end{rSection}
 
-\textbf{Young Research Fellow}, IIIT Hyderabad IHub Foundation \hfill July 2024 -- November 2024\\
-Hyderabad, India (On-site)
-\resumeItemListStart
-  \resumeItem{Engineered a real-time IoT system by collecting sensor data with MQTT, Fastify, and SQLite, and integrating it with machine learning insights for interactive visualizations.}
-  \resumeItem{Researched and implemented on-device ML inference in React Native using ML Kit via a custom wrapper, TensorFlow Lite (react-native-fast-tflite), and ONNX (onnx-runtime-react-native).}
-\resumeItemListEnd
+\begin{rSection}{Skills}
+
+\textbf{Programming languages:} Go, Rust, TypeScript\\
+\textbf{Frameworks and libraries:} React Native, Fastify, ML Kit, TensorFlow Lite, ONNX Runtime\\
+\textbf{Databases:} SQLite, Postgres, ClickHouse, q/kdb+, TigerBeetle\\
+\textbf{Tools and software:} Kafka, Docker, Terraform, MT5, CORBA, OmniORB, Cargo\\
+\textbf{Cloud platforms:} AWS: EC2, ECS, ECR, S3, IAM, VPC, VPN, Lambda, CloudWatch. Cloudflare: R2, Workers. Modal.
 
 \end{rSection}
 
@@ -56,22 +70,13 @@ Hyderabad, India (On-site)
 
 \textbf{Monkey Compiler}
 \resumeItemListStart
-  \resumeItem{Developed in Go with no external dependencies; interprets integer and boolean types.}
-  \resumeItem{Supports function calls, closures, and conditional expressions.}
+  \resumeItem{Built an interpreter in Go with no external dependencies, supporting integers, booleans, functions, closures, conditionals, and lexical scoping.}
 \resumeItemListEnd
 
 \textbf{Market Maker Simulator}
 \resumeItemListStart
-  \resumeItem{Built a high-performance \textbf{Rust} market-maker simulator for ETH/USDC with live \textbf{Binance WebSocket}, \textbf{Jupiter} and \textbf{CoW API} price aggregation, custom execution logic, synthetic bid/ask modeling, and real-time PnL tracking.}
-  \resumeItem{Designed and benchmarked a 10-minute automated quoting engine with a 2-second tick rate, a \$100k notional target per session, dynamic fill-probability interpolation, a median-pricing model, and resilient async rate-limits and reconnection handling using the \textbf{Rust} async runtime and \textbf{cargo} suite.}
-\resumeItemListEnd
-
-\end{rSection}
-
-\begin{rSection}{Achievements}
-
-\resumeItemListStart
-  \resumeItem{\textbf{First-batch solver} — Jane Street \emph{Dropped a Neural Net}: 97-layer reconstruction (Hungarian pairing + hill climbing), exact match to historical predictions (MSE 0).}
+  \resumeItem{Built an asynchronous ETH/USDC market-making simulator in Rust. Ingested Binance WebSocket and Jupiter/CoW Protocol API prices concurrently and maintained the latest cross-venue market state through Tokio channels.}
+  \resumeItem{Designed median-based quoting and probabilistic execution models with 2-second trading ticks, automatic WebSocket reconnection, dynamic fill probabilities, and real-time PnL and notional tracking.}
 \resumeItemListEnd
 
 \end{rSection}
