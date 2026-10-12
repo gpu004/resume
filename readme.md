@@ -2,7 +2,7 @@
 
 Brooklyn, New York, United States
 
-+1 (347) 318-7920 | [tushardzig@gmail.com](mailto:tushardzig@gmail.com) | [Website](https://tushar-6666.vercel.app/) | [GitHub](https://github.com/gpu004) | [LinkedIn](https://www.linkedin.com/in/dahiya-tushar/)
+[tushardzig@gmail.com](mailto:tushardzig@gmail.com) | [Website](https://tushar-6666.vercel.app/) | [GitHub](https://github.com/gpu004) | [LinkedIn](https://www.linkedin.com/in/dahiya-tushar/)
 
 [Download the resume PDF](basic/resume.pdf)
 
