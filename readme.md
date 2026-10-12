@@ -27,8 +27,8 @@ Abu Dhabi, UAE
 
 Abu Dhabi, UAE
 
-- Developed end-to-end marketplaces for a platform for the financialization and trading of real-world assets.
-- Developed custom reinforcement-learning environments in Harbor, including task definitions, reward logic, and evaluation workflows for training and evaluating OpenAI and Anthropic models.
+- Developed reinforcement-learning environments in Harbor, implementing task definitions, reward functions, and evaluation pipelines for training and evaluating OpenAI and Anthropic models.
+- Built end-to-end marketplaces for a fintech platform focused on the financialization and trading of real-world assets.
 
 **Backend and Data Engineer**, Zator | December 2024 - March 2025
 
