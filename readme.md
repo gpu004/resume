@@ -15,13 +15,6 @@ New York, NY
 - Led technical sessions for graduate students on AQuery, q/kdb+, and ReproZip, covering query execution, time-series data processing, and reproducible database experiments.
 - Supported students with database-system assignments and projects involving transaction processing, performance tuning, indexing, and distributed systems.
 
-**Independent Software Consultant**, Confidential Fintech Client | January 2026 - July 2026
-
-Abu Dhabi, UAE
-
-- Developed end-to-end marketplaces for a platform for the financialization and trading of real-world assets.
-- Developed custom reinforcement-learning environments in Harbor, including task definitions, reward logic, and evaluation workflows for training and evaluating OpenAI and Anthropic models.
-
 **Software Developer**, Qdata, Sirius Holdings | April 2025 - May 2026
 
 Abu Dhabi, UAE
@@ -29,6 +22,13 @@ Abu Dhabi, UAE
 - Implemented and tested custom MT5 trading algorithms; managed dozens of accounts with dashboards, automated multi-leg position management, and configurable execution and exit strategies.
 - Built custom Terraform automation for 1,000+ concurrent AWS ECS workers and VPN connectivity between AWS and local servers, keeping restricted data on local servers.
 - Optimized C++11 and C++17 SAT solvers and CNF generation; built SHA-256 and CORBA/OmniORB distributed systems.
+
+**Independent Software Consultant**, Confidential Fintech Client | January 2026 - July 2026
+
+Abu Dhabi, UAE
+
+- Developed end-to-end marketplaces for a platform for the financialization and trading of real-world assets.
+- Developed custom reinforcement-learning environments in Harbor, including task definitions, reward logic, and evaluation workflows for training and evaluating OpenAI and Anthropic models.
 
 **Backend and Data Engineer**, Zator | December 2024 - March 2025
 
@@ -48,13 +48,34 @@ Abu Dhabi, UAE
 
 ## Skills
 
-- Programming languages: Go, Rust, TypeScript
-- Frameworks and libraries: React Native, Fastify, ML Kit, TensorFlow Lite, ONNX Runtime
+- Programming languages: Python, Go, Rust, TypeScript, SQL, OCaml
+- Frameworks and libraries: PyTorch, React Native, Fastify, ML Kit, TensorFlow Lite, ONNX Runtime
+- Performance analysis: GPU roofline modeling, microbenchmarking, SIMD optimization
 - Databases: SQLite, Postgres, ClickHouse, q/kdb+, TigerBeetle
 - Tools and software: Kafka, Docker, Terraform, MT5, CORBA, OmniORB, Cargo
 - Cloud platforms: AWS: EC2, ECS, ECR, S3, IAM, VPC, VPN, Lambda, CloudWatch. Cloudflare: R2, Workers. Modal.
 
 ## Projects
+
+**[GPU Napkin Math](https://github.com/gpu004/napkin-math-gpu)**
+
+- Built a Python roofline estimator and interactive Astro dashboard to model GPU compute, HBM traffic, host transfers, peer copies, kernel overhead, and memory capacity.
+- Calibrated the estimator with PyTorch microbenchmarks on two Modal H100 SXM GPUs; recorded 717 TFLOP/s dense BF16 GEMM and 3.00 TB/s HBM copy bandwidth. Distinguished measured H100 results from vendor ceilings for B200/B300.
+
+**[VLIW/SIMD Kernel Optimization](https://github.com/gpu004/original_performance_takehome)**
+
+- Optimized Anthropic's simulated tree-traversal kernel from 147,734 to 2,910 cycles, a 50.8x speedup, using eight SIMD streams, register-resident state, software pipelining, and fused multiply-add instructions.
+- Verified output correctness against the unchanged upstream frozen simulator and documented optimization steps and remaining gather-load bottlenecks.
+
+**[Horizon: Reproducible Agent Experiments](https://github.com/gpu004/mongomongo/tree/main/horizon)**
+
+- Built a TypeScript harness for agent-driven performance experiments with an independent verifier, immutable candidate snapshots, and durable SQLite/MongoDB experiment ledgers.
+- Implemented checkpoint recovery, fenced controller leases, and scoped memory retrieval; added fault-injection tests for interrupted runs and checks that reject stale-cache and verifier-bypass candidates.
+
+**[OCaml Ledger State Machine](https://github.com/gpu004/6666)**
+
+- Reimplemented TigerBeetle ledger semantics in an experimental OCaml core with 128-bit accounting, two-phase transfers, linked-batch rollback, indexed queries, and pending-transfer expiry.
+- Added property tests and equivalence scenarios using pinned upstream behavior as a reference; built workload benchmarks reporting throughput and allocation per operation.
 
 **Monkey Compiler**
 
