@@ -26,9 +26,9 @@ Abu Dhabi, UAE
 
 Abu Dhabi, UAE
 
-- Built a CNF generator and SHA-256 implementation from scratch and optimized them for distributed execution.
-- Designed a CORBA/OmniORB manager-worker system and containerized workloads on AWS ECS. Used Terraform to provision 1,000+ concurrent workers.
-- Developed MT5 trading dashboards and automated multi-leg position-management systems with configurable execution and exit strategies.
+- Implemented and tested custom MT5 trading algorithms; managed dozens of accounts with dashboards, automated multi-leg position management, and configurable execution and exit strategies.
+- Built custom Terraform automation for 1,000+ concurrent AWS ECS workers and VPN connectivity between AWS and local servers, keeping restricted data on local servers.
+- Optimized C++11 and C++17 SAT solvers and CNF generation; built SHA-256 and CORBA/OmniORB distributed systems.
 
 **Backend and Data Engineer**, Zator | December 2024 - March 2025
 
