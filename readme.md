@@ -46,15 +46,6 @@ Abu Dhabi, UAE
 
 **Bachelor of Engineering in Information Science and Engineering**, National Institute of Engineering, Mysore | January 2021 - August 2024
 
-## Skills
-
-- Programming languages: Python, Go, Rust, TypeScript, SQL, OCaml
-- Frameworks and libraries: PyTorch, React Native, Fastify, ML Kit, TensorFlow Lite, ONNX Runtime
-- Performance analysis: GPU roofline modeling, microbenchmarking, SIMD optimization
-- Databases: SQLite, Postgres, ClickHouse, q/kdb+, TigerBeetle
-- Tools and software: Kafka, Docker, Terraform, MT5, CORBA, OmniORB, Cargo
-- Cloud platforms: AWS: EC2, ECS, ECR, S3, IAM, VPC, VPN, Lambda, CloudWatch. Cloudflare: R2, Workers. Modal.
-
 ## Projects
 
 **[GPU Napkin Math](https://github.com/gpu004/napkin-math-gpu)**
