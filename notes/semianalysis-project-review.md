@@ -2,9 +2,9 @@
 
 Reviewed October 12, 2026. The supplied Episode 035 transcript describes the consulting business rather than a single job specification. I used its emphasis on GPU performance projections, custom analytical dashboards, technical diligence, and clear research outputs to select projects. The [official careers page](https://semianalysis.com/semianalysis-careers/) also lists consulting roles involving technical analysis and analytical models.
 
-The updated resume is two pages. Existing experience and projects are retained. Four projects were added, with GPU performance work first. Python, SQL, OCaml, PyTorch, and performance-analysis skills were added based on the reviewed implementations.
+The current resume is two pages. Its projects are GPU Napkin Math, VLIW/SIMD Kernel Optimization, and Monkey Compiler. Horizon, Market Maker Simulator, and the OCaml Ledger State Machine were removed at the user's request. The evidence below preserves the original project review. Python, SQL, OCaml, PyTorch, and performance-analysis skills were added based on the reviewed implementations.
 
-## Added projects and evidence
+## Reviewed projects and evidence
 
 | Project | Reason to include | Evidence reviewed |
 | --- | --- | --- |

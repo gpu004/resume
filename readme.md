@@ -67,21 +67,6 @@ Abu Dhabi, UAE
 - Optimized Anthropic's simulated tree-traversal kernel from 147,734 to 2,910 cycles, a 50.8x speedup, using eight SIMD streams, register-resident state, software pipelining, and fused multiply-add instructions.
 - Verified output correctness against the unchanged upstream frozen simulator and documented optimization steps and remaining gather-load bottlenecks.
 
-**[Horizon: Reproducible Agent Experiments](https://github.com/gpu004/mongomongo/tree/main/horizon)**
-
-- Built a TypeScript harness for agent-driven performance experiments with an independent verifier, immutable candidate snapshots, and durable SQLite/MongoDB experiment ledgers.
-- Implemented checkpoint recovery, fenced controller leases, and scoped memory retrieval; added fault-injection tests for interrupted runs and checks that reject stale-cache and verifier-bypass candidates.
-
-**[OCaml Ledger State Machine](https://github.com/gpu004/6666)**
-
-- Reimplemented TigerBeetle ledger semantics in an experimental OCaml core with 128-bit accounting, two-phase transfers, linked-batch rollback, indexed queries, and pending-transfer expiry.
-- Added property tests and equivalence scenarios using pinned upstream behavior as a reference; built workload benchmarks reporting throughput and allocation per operation.
-
 **Monkey Compiler**
 
 - Built an interpreter in Go with no external dependencies, supporting integers, booleans, functions, closures, conditionals, and lexical scoping.
-
-**Market Maker Simulator**
-
-- Built an asynchronous ETH/USDC market-making simulator in Rust. Ingested Binance WebSocket and Jupiter/CoW Protocol API prices concurrently and maintained the latest cross-venue market state through Tokio channels.
-- Designed median-based quoting and probabilistic execution models with 2-second trading ticks, automatic WebSocket reconnection, dynamic fill probabilities, and real-time PnL and notional tracking.

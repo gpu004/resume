@@ -82,27 +82,9 @@ National Institute of Engineering, Mysore\hfill January 2021 - August 2024
   \resumeItem{Verified output correctness against the unchanged upstream frozen simulator and documented optimization steps and remaining gather-load bottlenecks.}
 \resumeItemListEnd
 
-\textbf{\href{https://github.com/gpu004/mongomongo/tree/main/horizon}{Horizon: Reproducible Agent Experiments}}
-\resumeItemListStart
-  \resumeItem{Built a TypeScript harness for agent-driven performance experiments with an independent verifier, immutable candidate snapshots, and durable SQLite/MongoDB experiment ledgers.}
-  \resumeItem{Implemented checkpoint recovery, fenced controller leases, and scoped memory retrieval; added fault-injection tests for interrupted runs and checks that reject stale-cache and verifier-bypass candidates.}
-\resumeItemListEnd
-
-\textbf{\href{https://github.com/gpu004/6666}{OCaml Ledger State Machine}}
-\resumeItemListStart
-  \resumeItem{Reimplemented TigerBeetle ledger semantics in an experimental OCaml core with 128-bit accounting, two-phase transfers, linked-batch rollback, indexed queries, and pending-transfer expiry.}
-  \resumeItem{Added property tests and equivalence scenarios using pinned upstream behavior as a reference; built workload benchmarks reporting throughput and allocation per operation.}
-\resumeItemListEnd
-
 \textbf{Monkey Compiler}
 \resumeItemListStart
   \resumeItem{Built an interpreter in Go with no external dependencies, supporting integers, booleans, functions, closures, conditionals, and lexical scoping.}
-\resumeItemListEnd
-
-\textbf{Market Maker Simulator}
-\resumeItemListStart
-  \resumeItem{Built an asynchronous ETH/USDC market-making simulator in Rust. Ingested Binance WebSocket and Jupiter/CoW Protocol API prices concurrently and maintained the latest cross-venue market state through Tokio channels.}
-  \resumeItem{Designed median-based quoting and probabilistic execution models with 2-second trading ticks, automatic WebSocket reconnection, dynamic fill probabilities, and real-time PnL and notional tracking.}
 \resumeItemListEnd
 
 \end{rSection}
