@@ -2,13 +2,13 @@
 
 Reviewed October 12, 2026. The supplied Episode 035 transcript describes the consulting business rather than a single job specification. I used its emphasis on GPU performance projections, custom analytical dashboards, technical diligence, and clear research outputs to select projects. The [official careers page](https://semianalysis.com/semianalysis-careers/) also lists consulting roles involving technical analysis and analytical models.
 
-The current resume is two pages. Its projects are GPU Napkin Math, VLIW/SIMD Kernel Optimization, and Monkey Compiler. Horizon, Market Maker Simulator, and the OCaml Ledger State Machine were removed at the user's request. The evidence below preserves the original project review. Python, SQL, OCaml, PyTorch, and performance-analysis skills were added based on the reviewed implementations.
+The current resume is two pages. Its projects are GPU Napkin Math, VLIW/SIMD Kernel Optimization, and Monkey Compiler. Horizon, Market Maker Simulator, and the OCaml Ledger State Machine were removed at the user's request. GPU Napkin Math was refreshed against the latest Rust implementation and October 12 measurements. The other evidence below preserves the original project review. Python, SQL, OCaml, PyTorch, and performance-analysis skills were added based on the reviewed implementations.
 
 ## Reviewed projects and evidence
 
 | Project | Reason to include | Evidence reviewed |
 | --- | --- | --- |
-| [GPU Napkin Math](https://github.com/gpu004/napkin-math-gpu) | Closest match to the podcast's performance projections and adjustable dashboards | Python estimator, typed profiles, Astro dashboard, PyTorch calibration harness, H100 raw results, methodology guide, and commit history |
+| [GPU Napkin Math](https://github.com/gpu004/napkin-math-gpu) | GPU performance projections, LLM inference arithmetic, and workload cost analysis | Rust CLI, LLM and cost modules, shared profile types, Rust/CUDA calibration harness, four measured GPU profiles, methodology guide, and commit history |
 | [VLIW/SIMD Kernel Optimization](https://github.com/gpu004/original_performance_takehome) | Concrete performance result and an explanation of the optimization process | Modified kernel, four optimization reports, commit history, and unchanged upstream tests |
 | [Horizon](https://github.com/gpu004/mongomongo/tree/main/horizon) | Reproducible experiments, independent verification, recovery, and database infrastructure | README, experiment report, controller, recovery code, MongoDB ledger, and test inventory |
 | [OCaml Ledger State Machine](https://github.com/gpu004/6666) | Finance-related systems work with explicit semantics and correctness checks | README, state machine, ledger, scenario tests, QCheck properties, and workload benchmark source |
@@ -30,20 +30,26 @@ Ran the current kernel with Python 3.12.14 against `tests/submission_tests.py`. 
 
 ### GPU estimator
 
-Reviewed revision `be2d8652e4`. Ran the Python CLI using the checked-in H100 profile:
+Refreshed against revision [`c75638e298163ac8c0b97dc743886378e24224f4`](https://github.com/gpu004/napkin-math-gpu/commit/c75638e298163ac8c0b97dc743886378e24224f4). The former Python estimator and Astro dashboard have been replaced by a Rust workspace with `napkin`, `napkin-profile`, and `napkin-bench` crates.
 
-```text
-dtype=bf16, FLOPs=2e14, HBM bytes=1e12, H2D bytes=2e9, launches=20
-compute floor: 278.786 ms
-memory floor: 333.370 ms
-transfer: 36.068 ms
-launches: 0.093 ms
-total estimate: 369.531 ms, memory-bound
-```
+Reviewed the current README, Cargo workspace, CLI, [LLM recipe implementation](https://github.com/gpu004/napkin-math-gpu/blob/c75638e298163ac8c0b97dc743886378e24224f4/crates/napkin/src/llm.rs), [cost implementation](https://github.com/gpu004/napkin-math-gpu/blob/c75638e298163ac8c0b97dc743886378e24224f4/crates/napkin/src/cost.rs), benchmark entry point, Modal launcher, and all four measured profiles through GitHub.
 
-The resume's hardware figures come from the [checked-in H100 calibration](https://github.com/gpu004/napkin-math-gpu/blob/main/results/h100-sxm.json), captured August 8, 2026 on two Modal H100 GPUs. The profile records dense BF16 GEMM at 717.3949 TFLOP/s and HBM copy bandwidth at 2,999.6720 GB/s. It also records hardware, software versions, samples, and correctness checks.
+- Roofline estimates account for compute, HBM traffic, transfers, launch overhead, and serial or overlapped stages. Copy estimates distinguish synchronous per-copy latency from an asynchronous lower bound.
+- LLM recipes derive prefill/decode FLOPs, weight and KV-cache traffic, and resident memory from model dimensions, batch, context, and precision. These are analytical lower bounds for dense decoder-only models, not measured model throughput. Memory fit distinguishes shardable weights/cache from replicated per-GPU memory.
+- Cost estimates include GPU count, utilization, startup, idle time, billing increments, and user-supplied or dated provider prices. Tokens per dollar requires a supplied workload count or rate; it is not inferred from peak FLOPs.
 
-No new GPU allocation or benchmark run was performed. These are recorded prototype microbenchmark results. The [evidence guide](https://github.com/gpu004/napkin-math-gpu/blob/main/BENCHMARKS.md) explicitly distinguishes them from canonical measurements using upstream NVIDIA tools. B200/B300 profiles use vendor ceilings; no measured Blackwell performance is claimed.
+The October 12, 2026 calibrations use two GPUs per Modal request, CUDA 12.9, Rust/cudarc, CUDA-event timing, and cuBLAS GEMM. The checked-in records contain seven rounds, raw samples, hardware/software metadata, and passing correctness flags:
+
+| GPU | Dense BF16 GEMM | HBM copy bandwidth |
+| --- | ---: | ---: |
+| A100 SXM 80GB | 265.2066 TFLOP/s | 1,738.0673 GB/s |
+| H100 SXM 80GB | 733.5508 TFLOP/s | 3,003.0502 GB/s |
+| B200 | 1,584.6249 TFLOP/s | 6,322.0785 GB/s |
+| B300 SXM6 | 1,823.0299 TFLOP/s | 6,486.5177 GB/s |
+
+The resume rounds the [B300 record](https://github.com/gpu004/napkin-math-gpu/blob/c75638e298163ac8c0b97dc743886378e24224f4/profiles/b300.measured.json) to 1.82 PFLOP/s dense BF16 GEMM and 6.49 TB/s HBM copy bandwidth. GEMM uses an 8192 x 8192 x 8192 shape. HBM copy bandwidth counts both read and write bytes, using decimal GB/s. Measured values remain separate from datasheet ceilings.
+
+No new GPU allocation, benchmark run, Rust CLI execution, or project test run was performed for this refresh. These are recorded calibration results. The [evidence guide](https://github.com/gpu004/napkin-math-gpu/blob/main/BENCHMARKS.md) still requires replacement by upstream authority metric by metric before calling the profiles canonical. The previous Python CLI result and August H100 figures are superseded in the resume.
 
 ### Horizon and OCaml ledger
 

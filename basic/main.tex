@@ -14,16 +14,16 @@
 \textbf{Instructor and Grader, Advanced Database Systems}, New York University\hfill September 2026 - December 2026\\
 New York, NY
 \resumeItemListStart
-  \resumeItem{Led technical sessions for graduate students on AQuery, q/kdb+, and ReproZip, covering query execution, time-series data processing, and reproducible database experiments.}
-  \resumeItem{Supported students with database-system assignments and projects involving transaction processing, performance tuning, indexing, and distributed systems.}
+  \resumeItem{Taught graduate students to execute and analyze time-series queries using AQuery and q/kdb+, and reproduce database experiments with ReproZip.}
+  \resumeItem{Reviewed and graded graduate-level database assignments and projects, evaluating query performance, indexing strategies, transaction processing, and distributed system implementations.}
 \resumeItemListEnd
 
 \textbf{Software Developer}, Qdata, Sirius Holdings\hfill April 2025 - May 2026\\
 Abu Dhabi, UAE
 \resumeItemListStart
-  \resumeItem{Implemented and tested custom MT5 trading algorithms; managed dozens of accounts with dashboards, automated multi-leg position management, and configurable execution and exit strategies.}
-  \resumeItem{Built custom Terraform automation for 1,000+ concurrent AWS ECS workers and VPN connectivity between AWS and local servers, keeping restricted data on local servers.}
-  \resumeItem{Optimized C++11 and C++17 SAT solvers and CNF generation; built SHA-256 and CORBA/OmniORB distributed systems.}
+  \resumeItem{Built and tested automated trading strategies for dozens of MetaTrader 5 accounts, with multi-leg position management, configurable execution rules, and dashboards for monitoring trades.}
+  \resumeItem{Automated the deployment of 1,000+ concurrent AWS ECS workers using Terraform and connected them to on-premises servers over VPN, keeping restricted data on local infrastructure.}
+  \resumeItem{Optimized SHA-256 CNF generation and SAT solvers in C++11/17, and built distributed worker coordination using CORBA/\allowbreak OmniORB for parallel computation.}
 \resumeItemListEnd
 
 \textbf{Independent Software Consultant}, Confidential Fintech Client\hfill January 2026 - July 2026\\
@@ -72,8 +72,9 @@ National Institute of Engineering, Mysore\hfill January 2021 - August 2024
 
 \textbf{\href{https://github.com/gpu004/napkin-math-gpu}{GPU Napkin Math}}
 \resumeItemListStart
-  \resumeItem{Built a Python roofline estimator and interactive Astro dashboard to model GPU compute, HBM traffic, host transfers, peer copies, kernel overhead, and memory capacity.}
-  \resumeItem{Calibrated the estimator with PyTorch microbenchmarks on two Modal H100 SXM GPUs; recorded 717 TFLOP/s dense BF16 GEMM and 3.00 TB/s HBM copy bandwidth. Distinguished measured H100 results from vendor ceilings for B200/B300.}
+  \resumeItem{Built a Rust CLI for GPU roofline estimates and LLM prefill/decode analysis, modeling FLOPs, HBM traffic, KV-cache capacity, transfer latency, and multi-GPU memory fit.}
+  \resumeItem{Added GPU cost modeling with utilization, startup and idle time, billing increments, and dated cloud prices to compare workload cost and tokens per dollar.}
+  \resumeItem{Built Rust/CUDA microbenchmarks on Modal for A100, H100, B200, and B300; measured 1.82 PFLOP/s dense BF16 GEMM and 6.49 TB/s HBM copy bandwidth on B300, with correctness checks and separate vendor ceilings.}
 \resumeItemListEnd
 
 \textbf{\href{https://github.com/gpu004/original_performance_takehome}{VLIW/SIMD Kernel Optimization}}

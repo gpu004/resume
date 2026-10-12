@@ -12,16 +12,16 @@ Brooklyn, New York, United States
 
 New York, NY
 
-- Led technical sessions for graduate students on AQuery, q/kdb+, and ReproZip, covering query execution, time-series data processing, and reproducible database experiments.
-- Supported students with database-system assignments and projects involving transaction processing, performance tuning, indexing, and distributed systems.
+- Taught graduate students to execute and analyze time-series queries using AQuery and q/kdb+, and reproduce database experiments with ReproZip.
+- Reviewed and graded graduate-level database assignments and projects, evaluating query performance, indexing strategies, transaction processing, and distributed system implementations.
 
 **Software Developer**, Qdata, Sirius Holdings | April 2025 - May 2026
 
 Abu Dhabi, UAE
 
-- Implemented and tested custom MT5 trading algorithms; managed dozens of accounts with dashboards, automated multi-leg position management, and configurable execution and exit strategies.
-- Built custom Terraform automation for 1,000+ concurrent AWS ECS workers and VPN connectivity between AWS and local servers, keeping restricted data on local servers.
-- Optimized C++11 and C++17 SAT solvers and CNF generation; built SHA-256 and CORBA/OmniORB distributed systems.
+- Built and tested automated trading strategies for dozens of MetaTrader 5 accounts, with multi-leg position management, configurable execution rules, and dashboards for monitoring trades.
+- Automated the deployment of 1,000+ concurrent AWS ECS workers using Terraform and connected them to on-premises servers over VPN, keeping restricted data on local infrastructure.
+- Optimized SHA-256 CNF generation and SAT solvers in C++11/17, and built distributed worker coordination using CORBA/OmniORB for parallel computation.
 
 **Independent Software Consultant**, Confidential Fintech Client | January 2026 - July 2026
 
@@ -59,8 +59,9 @@ Abu Dhabi, UAE
 
 **[GPU Napkin Math](https://github.com/gpu004/napkin-math-gpu)**
 
-- Built a Python roofline estimator and interactive Astro dashboard to model GPU compute, HBM traffic, host transfers, peer copies, kernel overhead, and memory capacity.
-- Calibrated the estimator with PyTorch microbenchmarks on two Modal H100 SXM GPUs; recorded 717 TFLOP/s dense BF16 GEMM and 3.00 TB/s HBM copy bandwidth. Distinguished measured H100 results from vendor ceilings for B200/B300.
+- Built a Rust CLI for GPU roofline estimates and LLM prefill/decode analysis, modeling FLOPs, HBM traffic, KV-cache capacity, transfer latency, and multi-GPU memory fit.
+- Added GPU cost modeling with utilization, startup and idle time, billing increments, and dated cloud prices to compare workload cost and tokens per dollar.
+- Built Rust/CUDA microbenchmarks on Modal for A100, H100, B200, and B300; measured 1.82 PFLOP/s dense BF16 GEMM and 6.49 TB/s HBM copy bandwidth on B300, with correctness checks and separate vendor ceilings.
 
 **[VLIW/SIMD Kernel Optimization](https://github.com/gpu004/original_performance_takehome)**
 
