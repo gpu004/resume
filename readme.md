@@ -71,6 +71,6 @@ Bachelor of Engineering in Information Science and Engineering<br>
 - Optimized Anthropic's simulated tree-traversal kernel from 147,734 to 2,910 cycles, a 50.8x speedup, using eight SIMD streams, register-resident state, software pipelining, and fused multiply-add instructions.
 - Verified output correctness against the unchanged upstream frozen simulator and documented optimization steps and remaining gather-load bottlenecks.
 
-### Monkey Compiler
+### [Monkey Compiler](https://github.com/gpu004/automatic-disco)
 
 - Built an interpreter in Go with no external dependencies, supporting integers, booleans, functions, closures, conditionals, and lexical scoping.
